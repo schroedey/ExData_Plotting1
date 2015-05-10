@@ -5,8 +5,8 @@
 ## must not have been renamed.
 ## Here is the source of the data:
 ## https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
-plot1 <- function(workdir = "C:/Users/jschroeder/git/ExData_Plotting1/"
-                  , datadir = "C:/Users/jschroeder/Google Drive/Dev/Coursera/4-ExpData/") {
+plot1 <- function(workdir = "~/devel/Coursera/datascience/4-expdata-cp1/ExData_Plotting1/"
+                  , datadir = "~/Google Drive/Dev/Coursera/4-ExpData/") {
     ## Make sure we have access to fread
     require("data.table")
     

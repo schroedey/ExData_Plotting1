@@ -5,8 +5,8 @@
 ## must not have been renamed.
 ## Here is the source of the data:
 ## https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
-plot3 <- function(workdir = "C:/Users/jschroeder/git/ExData_Plotting1/"
-                  , datadir = "C:/Users/jschroeder/Google Drive/Dev/Coursera/4-ExpData/") {
+plot3 <- function(workdir = "~/devel/Coursera/datascience/4-expdata-cp1/ExData_Plotting1/"
+                  , datadir = "~/Google Drive/Dev/Coursera/4-ExpData/") {
     ## Make sure we have access to fread
     require("data.table")
     
@@ -26,7 +26,7 @@ plot3 <- function(workdir = "C:/Users/jschroeder/git/ExData_Plotting1/"
     
     ## Convert the column(s) to appropriate data type(s)
     ## NB: Technically, the Time column will now have both the date and time,
-    ## and the Date column is being left in the data set, but plotting GAP
+    ## and the Date column is being left in the data set, but plotting ESM vals
     ## against Time (which is now date and time) produces the desired graph
     data$Time <- as.POSIXct(paste(data$Date, data$Time), format="%d/%m/%Y %H:%M:%S")
     data$Sub_metering_1 <- as.numeric(data$Sub_metering_1)
